@@ -2,7 +2,7 @@
 
 import React,{useState} from 'react';
 import '../assets/css/style.css';
-
+import { motion } from 'framer-motion';
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -31,12 +31,25 @@ function Contact() {
   };
   return (
     <div class="contact-us">
-    <div class="contact-banner">
-      <div class="banner-content">
-        <h2>Get in Touch with Us</h2>
-        <p>We'd love to hear from you! Feel free to reach out anytime.</p>
-      </div>
-    </div>
+     <section className="about-hero">
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            About ArtVibe Gallery
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            Where Passion Meets Artistic Expression
+          </motion.p>
+        </div>
+      </section>
   
     <div class="contact-details-container">
       <div class="contact-details">
