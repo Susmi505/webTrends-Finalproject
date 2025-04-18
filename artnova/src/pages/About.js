@@ -1,4 +1,4 @@
-// Created by Claude, based on your design
+// Created by Ragni
 import React, { useState, useEffect } from 'react';
 import '../assets/css/style.css';
 import { motion } from 'framer-motion'; 
@@ -13,8 +13,6 @@ function About() {
       name: "Susmi Rani",
       position: "Curator and Art Director",
       image:    `${require("../assets/images/Susmi.jpeg")}`,
-      bio: "John brings over 15 years of experience in the art world. With a background in Fine Arts from the University of Arts London, he has curated exhibitions across Europe and North America. His vision drives our gallery's artistic direction.",
-      expertise: ["Contemporary Art", "Exhibition Design", "Artist Relations"],
       social: {
         instagram: "#",
         linkedin: "#",
@@ -26,8 +24,6 @@ function About() {
       name: "Rajni Rajni",
       position: "Lead Artist and Exhibitor",
       image: `${require("../assets/images/Rajni.jpeg")}`,
-      bio: "An accomplished artist with works featured in major collections worldwide, Jane leads our artist community and exhibition program. Her innovative approach to mixed media has earned her multiple awards and recognition.",
-      expertise: ["Mixed Media", "Installation Art", "Mentorship"],
       social: {
         instagram: "#",
         linkedin: "#",
@@ -39,8 +35,6 @@ function About() {
       name: "Aparna G Ashokan",
       position: "Gallery Manager",
       image: `${require("../assets/images/Aparna.jpeg")}`,
-      bio: "Michael ensures the seamless operation of our gallery space. With a background in Art Management and Business Administration, he bridges the gap between artistic vision and practical execution.",
-      expertise: ["Gallery Operations", "Event Planning", "Client Relations"],
       social: {
         instagram: "#",
         linkedin: "#",
@@ -49,53 +43,9 @@ function About() {
     }
   ];
 
-  // Timeline data
-  const milestones = [
-    {
-      year: "2015",
-      title: "The Beginning",
-      description: "Our gallery was founded with a mission to showcase emerging local talent."
-    },
-    {
-      year: "2017",
-      title: "Expansion",
-      description: "We moved to our current location and expanded our exhibition space."
-    },
-    {
-      year: "2019",
-      title: "International Recognition",
-      description: "Our gallery received its first international award for curatorial excellence."
-    },
-    {
-      year: "2022",
-      title: "Digital Transformation",
-      description: "Launched our online platform to reach art lovers globally."
-    },
-    {
-      year: "2025",
-      title: "The Future",
-      description: "Continuing to innovate and bring exceptional art experiences."
-    }
-  ];
+ 
 
-  // Testimonials
-  const testimonials = [
-    {
-      quote: "This gallery has transformed how I experience contemporary art. Their curation is exceptional.",
-      author: "Sarah J., Art Collector",
-      image: "assets/images/testimonial1.jpg"
-    },
-    {
-      quote: "As an emerging artist, finding a platform that truly values artistic integrity is rare. This gallery does exactly that.",
-      author: "Mark T., Featured Artist",
-      image: "assets/images/testimonial2.jpg"
-    },
-    {
-      quote: "The community events and workshops hosted here have connected me with fellow art enthusiasts in meaningful ways.",
-      author: "Lisa R., Gallery Member",
-      image: "assets/images/testimonial3.jpg"
-    }
-  ];
+
 
   useEffect(() => {
     // Simulate loading delay
@@ -121,14 +71,14 @@ function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            About ArtVibe Gallery
+            About ArtNova Gallery
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Where Passion Meets Artistic Expression
+            Where Creativity Breathes Life Into Every Stroke
           </motion.p>
         </div>
       </section>
@@ -223,17 +173,6 @@ function About() {
                   <h3>{member.name}</h3>
                   <p className="team-position">{member.position}</p>
                   
-                  <div className="team-details">
-                    <p className="team-bio">{member.bio}</p>
-                    <div className="team-expertise">
-                      <h4>Expertise</h4>
-                      <ul>
-                        {member.expertise.map((skill, index) => (
-                          <li key={index}>{skill}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}

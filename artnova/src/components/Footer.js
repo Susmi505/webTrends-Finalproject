@@ -1,3 +1,4 @@
+// created by Aparna
 import React from 'react'
 import '../assets/css/style.css';
 import { Link } from 'react-router-dom';
@@ -29,7 +30,7 @@ export const Footer = () => {
         
             <div className="footer-links-column">
                 <h4>Contact</h4>
-                <p>500 Gallery Ave, New York</p>
+                <p>62A churchill street, Waterloo</p>
                 <p>info@artnova.com</p>
                 <p>+1 (555) 123-4567</p>
             </div>

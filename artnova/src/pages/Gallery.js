@@ -1,4 +1,4 @@
-// Created by [Your Name]
+// Created by Aparna
 
 import '../assets/css/style.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -45,7 +45,7 @@ function Gallery() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                About ArtVibe Gallery
+                Visit ArtNova Gallery
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}

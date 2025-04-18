@@ -1514,3 +1514,6 @@ body {
     height: 250px;
   }
 }
+.success-msg{
+  color: green;
+}

@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+// created by Susmi Rani
+import React, { useState, useEffect, use } from 'react';
 import '../assets/css/style.css';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 function Home() {
+    const navigate = useNavigate();
 
 
     return (
@@ -12,8 +14,8 @@ function Home() {
                     <h1><span className="highlight">Experience</span> the Fusion of Art and Emotion</h1>
                     <p>Dive into our curated collections and exhibitions that celebrate artistic diversity</p>
                     <div className="cta-container">
-                        <button className="primary-btn">Explore Gallery</button>
-                        <button className="secondary-btn">Meet Artists</button>
+                        <button className="primary-btn" onClick={()=>{navigate("/gallery")}}>Explore Gallery</button>
+                        <button className="secondary-btn" onClick={()=>{navigate("/about")}}>Meet Artists</button>
                     </div>
                 </div>
             </section>
@@ -28,7 +30,7 @@ function Home() {
                         <h2>Our <span className="highlight">Story</span></h2>
                         <p>ArtNova is a modern digital space that celebrates artistic expression. Our mission is to bring diverse art collections to the fingertips of art lovers worldwide.</p>
                         <p className="subtle-text">Founded in 2022, we've curated works from over 500 artists across the globe.</p>
-                        <button className="outline-btn">Learn More</button>
+                        <button className="outline-btn"  onClick={()=>{navigate("/about")}}>Learn More</button>
                     </div>
                 </div>
             </section>
@@ -43,42 +45,42 @@ function Home() {
                         <div className="card-image">
                             <img src={require('../assets/images/art1.jpg')} alt="Art 1" />
                             <div className="overlay">
-                                <button className="view-btn">View</button>
+                                <button className="view-btn" onClick={()=>{navigate("/gallery")}}>View</button>
                             </div>
                         </div>
                         <div className="card-content">
                             <h3>Abstract Dreams</h3>
                             <p className="artist">by Emma Rose</p>
                             <p className="description">A journey through color and emotion in abstract form</p>
-                            <button className="text-btn">View Details <span className="arrow">→</span></button>
+                            <button className="text-btn" onClick={()=>{navigate("/gallery")}}>View Details <span className="arrow">→</span></button>
                         </div>
                     </div>
                     <div className="collection-card">
                         <div className="card-image">
                             <img src={require('../assets/images/art2.jpg')} alt="Art 2" />
                             <div className="overlay">
-                                <button className="view-btn">View</button>
+                                <button className="view-btn" onClick={()=>{navigate("/gallery")}}>View</button>
                             </div>
                         </div>
                         <div className="card-content">
                             <h3>Nature's Pulse</h3>
                             <p className="artist">by Liam Brooks</p>
                             <p className="description">Exploring the rhythmic patterns found in natural landscapes</p>
-                            <button className="text-btn">View Details <span className="arrow">→</span></button>
+                            <button className="text-btn" onClick={()=>{navigate("/gallery")}}>View Details <span className="arrow">→</span></button>
                         </div>
                     </div>
                     <div className="collection-card">
                         <div className="card-image">
                             <img src={require('../assets/images/art3.jpg')} alt="Art 3" />
                             <div className="overlay">
-                                <button className="view-btn">View</button>
+                                <button className="view-btn" onClick={()=>{navigate("/gallery")}}>View</button>
                             </div>
                         </div>
                         <div className="card-content">
                             <h3>Urban Symphony</h3>
                             <p className="artist">by Ava Smith</p>
                             <p className="description">The harmonious chaos of metropolitan life captured on canvas</p>
-                            <button className="text-btn">View Details <span className="arrow">→</span></button>
+                            <button className="text-btn" onClick={()=>{navigate("/gallery")}}>View Details <span className="arrow">→</span></button>
                         </div>
                     </div>
                 </div>
@@ -102,7 +104,7 @@ function Home() {
                             <h3>Light & Shadow</h3>
                             <p className="exhibition-date">May 20 - June 10, 2025</p>
                             <p className="exhibition-desc">An exploration of contrast and duality through various artistic mediums</p>
-                            <button className="primary-btn small">Learn More</button>
+                            <button className="primary-btn small" onClick={()=>{navigate("/about")}}>Learn More</button>
                         </div>
                     </div>
                     <div className="exhibition">
@@ -117,7 +119,7 @@ function Home() {
                             <h3>Whispers of Nature</h3>
                             <p className="exhibition-date">June 15 - July 5, 2025</p>
                             <p className="exhibition-desc">A celebration of the subtle beauty found in natural elements</p>
-                            <button className="primary-btn small">Learn More</button>
+                            <button className="primary-btn small" onClick={()=>{navigate("/about")}}>Learn More</button>
                         </div>
                     </div>
                 </div>
