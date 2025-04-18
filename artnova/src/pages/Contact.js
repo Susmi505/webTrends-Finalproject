@@ -31,7 +31,7 @@ function Contact() {
   };
   return (
     <div class="contact-us">
-     <section className="about-hero">
+     <section className="contact-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <motion.h1 

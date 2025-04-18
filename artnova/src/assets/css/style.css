@@ -90,7 +90,7 @@ body {
 /* Banner section */
 .banner {
   position: relative;
-  background-image: url('../images/bghome.jpg');
+  background-image: url('../images/art-banner3.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -934,17 +934,32 @@ body {
 }
 
 /* Hero Section */
-.about-hero {
+.gallery-hero,
+.about-hero,
+.contact-hero {
   height: 60vh;
   min-height: 400px;
-  /* background: url('assets/images/about-banner.jpg') center/cover no-repeat; */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--text-light);
+  background-size: cover !important;
 }
+
+.gallery-hero {
+  background: url('../images/art-banner9.webp');
+}
+
+.about-hero {
+  background: url('../images/art-banner6.webp');
+}
+
+.contact-hero {
+  background: url('../images/art-banner8.png');
+}
+
 
 .hero-overlay {
   position: absolute;

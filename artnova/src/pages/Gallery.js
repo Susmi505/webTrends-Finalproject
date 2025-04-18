@@ -37,7 +37,7 @@ function Gallery() {
   return (
     <div className="gallery-page">
       {/* Banner */}
-     <section className="about-hero">
+     <section className="gallery-hero">
             <div className="hero-overlay"></div>
             <div className="hero-content">
               <motion.h1 
