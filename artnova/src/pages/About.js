@@ -10,9 +10,9 @@ function About() {
   const teamMembers = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Susmi Rani",
       position: "Curator and Art Director",
-      image: "assets/images/team1.jpg",
+      image:    `${require("../assets/images/Susmi.jpeg")}`,
       bio: "John brings over 15 years of experience in the art world. With a background in Fine Arts from the University of Arts London, he has curated exhibitions across Europe and North America. His vision drives our gallery's artistic direction.",
       expertise: ["Contemporary Art", "Exhibition Design", "Artist Relations"],
       social: {
@@ -23,9 +23,9 @@ function About() {
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Rajni Rajni",
       position: "Lead Artist and Exhibitor",
-      image: "assets/images/team2.jpg",
+      image: `${require("../assets/images/Rajni.jpeg")}`,
       bio: "An accomplished artist with works featured in major collections worldwide, Jane leads our artist community and exhibition program. Her innovative approach to mixed media has earned her multiple awards and recognition.",
       expertise: ["Mixed Media", "Installation Art", "Mentorship"],
       social: {
@@ -36,9 +36,9 @@ function About() {
     },
     {
       id: 3,
-      name: "Michael Brown",
+      name: "Aparna G Ashokan",
       position: "Gallery Manager",
-      image: "assets/images/team3.jpg",
+      image: `${require("../assets/images/Aparna.jpeg")}`,
       bio: "Michael ensures the seamless operation of our gallery space. With a background in Art Management and Business Administration, he bridges the gap between artistic vision and practical execution.",
       expertise: ["Gallery Operations", "Event Planning", "Client Relations"],
       social: {
